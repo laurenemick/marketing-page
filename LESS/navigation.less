@@ -1,5 +1,5 @@
 header {
-    height: 100vh;
+    height: 80vh;
     background-image: url('https://images.unsplash.com/photo-1491146179969-d674118945ff?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1189&q=80'); 
     background-position: center;
     background-size: cover;
@@ -10,13 +10,22 @@ header {
         background-color: rgba(black, 0.5);
         display: flex;
 
+        @media (max-width: 500px) {
+            background-color: @everglade;
+        }
+
         .left-side {
             width: 50%;
             display: flex;
             align-items: center;
-            
+            justify-content: flex-start;
+
             a {
                 .a-styles();
+
+                @media (max-width: 500px) {
+                    display: none;
+                }
             }
         } // end of .left-side
         .right-side {
@@ -27,16 +36,89 @@ header {
 
             a {
                 .a-styles();
+
+                @media (max-width: 500px) {
+                    display: none;
+                }
             }
         } // end of .right-side
     } // end of nav
     .nav-main {
+        height: 80%;
         display: flex;
+        flex-direction: column;
+        justify-content: center;
         align-items: center;
-        margin: 0 30%;
+
+        @media (max-width: 500px) {
+           display: flex;
+        }
 
         h1 {
+            width: 30%;
             font-weight: bold;
+
+            @media (max-width: 500px) {
+                width: 100%;
+                font-size: 3rem;
+                font-weight: normal;
+                display: flex;
+                justify-content: center;
+            }
+        }
+        .special-font {
+            width: 30%;
+            font-weight: bold;
+            font-style: italic;
+            font-size: 4.8rem;
+
+            @media (max-width: 500px) {
+                width: 100%;
+                font-size: 3.6rem;
+            }
         }
     }
 } // end of header
+
+.bottom-section {
+    margin: 3% 0;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    @media (max-width: 500px) {
+        padding: 0 3%;
+    }
+    
+    .bottom-section-text {
+        width: 30%;
+
+        @media (max-width: 500px) {
+            width: 100%;
+        }
+
+        p, .btn {
+            padding: 3% 0;
+        }
+        .second-para {
+            padding: 3% 0;
+            line-height: 1.5;
+            font-size: 1.6rem;
+
+            @media (max-width: 500px) {
+                display: none;
+            }
+        }
+        .btn {
+            margin-top: 6%;
+            padding-top: 3% 0;
+            font-size: 1.6rem;
+            background-color: @everglade;
+            color: white;
+            border-radius: 3px;
+            text-align: center;
+        }
+    }
+} // end of section
