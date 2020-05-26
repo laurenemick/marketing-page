@@ -3,4 +3,16 @@
     color: white;
     font-size: 1.6rem;
     margin: 3%;
+    padding: 0 3%;
+}
+
+.custom-button(@padding: 3% 0, @font-color: white, @bg-color: @everglade) {
+    margin-top: 6%;
+    padding: @padding;
+    font-size: 1.6rem;
+    background-color: @bg-color;
+    color: @font-color;
+    border: 1px solid @everglade;
+    border-radius: 3px;
+    text-align: center;
 }
