@@ -463,6 +463,7 @@ img {
 @media (max-width: 500px) {
   #meet-the-team .container div {
     display: flex;
+    margin: 4% 1%;
   }
 }
 #meet-the-team .container div a {
@@ -485,6 +486,7 @@ img {
     flex-direction: column;
     width: 50%;
     line-height: 1.5;
+    padding: 0 2%;
   }
 }
 #meet-the-team .container div .container-text h3 {
@@ -494,5 +496,6 @@ img {
 @media (max-width: 500px) {
   #meet-the-team .container div .inverse {
     order: -1;
+    text-align: right;
   }
 }
