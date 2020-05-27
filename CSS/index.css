@@ -155,7 +155,7 @@ img {
   max-width: 100%;
   height: auto;
 }
-header {
+#home {
   height: 80vh;
   background-image: url('https://images.unsplash.com/photo-1491146179969-d674118945ff?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1189&q=80');
   background-position: center;
@@ -163,65 +163,72 @@ header {
   color: white;
 }
 @media (max-width: 500px) {
-  header {
+  #home {
     height: 60vh;
   }
 }
-header nav {
+#home nav {
   width: 100%;
   background-color: rgba(0, 0, 0, 0.5);
   display: flex;
 }
 @media (max-width: 500px) {
-  header nav {
+  #home nav {
     background-color: #235B2D;
   }
 }
-header nav .left-side {
+#home nav .left-side {
   width: 50%;
   display: flex;
   align-items: center;
   justify-content: flex-start;
 }
-header nav .left-side h4 {
+#home nav .left-side h4 {
   padding: 5%;
 }
 @media (max-width: 500px) {
-  header nav .left-side h4 {
+  #home nav .left-side h4 {
     font-size: 2.2rem;
   }
 }
-header nav .left-side a {
+#home nav .left-side a {
   text-decoration: none;
   color: white;
   font-size: 1.6rem;
-  margin: 3%;
-  padding: 0 3%;
+  padding: 0 2%;
 }
 @media (max-width: 500px) {
-  header nav .left-side a {
+  #home nav .left-side a {
     display: none;
   }
 }
-header nav .right-side {
+#home nav .left-side a:hover {
+  color: #CDEFB3;
+}
+#home nav .right-side {
   width: 50%;
   display: flex;
   align-items: center;
   justify-content: flex-end;
 }
-header nav .right-side a {
+#home nav .right-side a {
   text-decoration: none;
   color: white;
   font-size: 1.6rem;
-  margin: 3%;
-  padding: 0 3%;
+  padding: 0 2%;
 }
 @media (max-width: 500px) {
-  header nav .right-side a {
+  #home nav .right-side a {
     display: none;
   }
 }
-header .nav-main {
+#home nav .right-side a:last-child {
+  padding-right: 5%;
+}
+#home nav .right-side a:hover {
+  color: #CDEFB3;
+}
+#home .nav-main {
   height: 80%;
   display: flex;
   flex-direction: column;
@@ -229,28 +236,28 @@ header .nav-main {
   align-items: center;
 }
 @media (max-width: 500px) {
-  header .nav-main {
+  #home .nav-main {
     display: flex;
   }
 }
-header .nav-main h1 {
+#home .nav-main h1 {
   font-weight: bold;
 }
 @media (max-width: 500px) {
-  header .nav-main h1 {
+  #home .nav-main h1 {
     font-size: 3.4rem;
     font-weight: 300;
     display: flex;
     justify-content: center;
   }
 }
-header .nav-main .special-font {
+#home .nav-main .special-font {
   font-weight: bold;
   font-style: italic;
   font-size: 4.8rem;
 }
 @media (max-width: 500px) {
-  header .nav-main .special-font {
+  #home .nav-main .special-font {
     font-size: 3.8rem;
   }
 }
@@ -303,6 +310,10 @@ header .nav-main .special-font {
   .bottom-section .bottom-section-text .btn {
     display: none;
   }
+}
+.bottom-section .bottom-section-text .btn:hover {
+  color: #235B2D;
+  background-color: white;
 }
 .bottom-section .bottom-section-text .btn2 {
   display: none;
