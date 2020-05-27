@@ -1,1 +1,91 @@
 // https://unsplash.com/photos/lWBZ01XRRoI
+
+#about {
+    background-color: @everglade;
+    color: white;
+
+    nav {
+        display: flex;
+        padding: 1% 0;
+
+        .left-side2 {
+            width: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: flex-start;
+
+            h2 {
+                padding: 0 5%;
+
+                @media (max-width: 500px) {
+                    font-size: 2.2rem;
+                }
+            }
+            a {
+                .a-styles();
+
+                @media (max-width: 500px) {
+                    display: none;
+                }
+            }
+            a:hover {
+                color: @tea-green;
+            }
+        }
+        .right-side2 {
+            width: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: flex-end;
+
+            a {
+                .a-styles();
+
+                @media (max-width: 500px) {
+                    display: none;
+                }
+            }
+            a:last-child {
+                padding-right: 5%;
+            }
+            a:hover {
+                color: @tea-green;
+            }
+        }
+    } // end of nav
+} // end of #about
+
+#meet-the-team {
+    background-color: #F9F9F9;
+
+    h2 {
+       padding: 4% 0 2% 2.4%; 
+    }
+    .container {
+        display: flex;
+        padding: 0 1.5%;
+        height: 100vh;
+        background-image: url('https://images.unsplash.com/photo-1536882240095-0379873feb4e?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1351&q=80'); 
+        background-position: right;
+        background-size: cover;
+
+        div {
+            width: calc(14.2857143 - 20px);
+            margin: 10px;
+
+            a {
+                text-decoration: none;
+                color: @heavy-metal;
+
+                img {
+                    border-radius: 3px;
+                    border: 2px solid @everglade;
+                }
+                h3 {
+                    padding: 4% 0;
+                    color: @heavy-metal;
+                }
+            } // end of a
+        } // end of div
+    } // end of .container
+} // end of meet-the-team

@@ -144,8 +144,15 @@ body {
 h1 {
   font-size: 4rem;
 }
-h4 {
+h2 {
   font-size: 2.5rem;
+}
+h3 {
+  font-size: 1.4rem;
+  font-weight: bold;
+}
+h4 {
+  font-size: 1.2rem;
 }
 p {
   line-height: 1.5;
@@ -171,6 +178,7 @@ img {
   width: 100%;
   background-color: rgba(0, 0, 0, 0.5);
   display: flex;
+  padding: 1% 0;
 }
 @media (max-width: 500px) {
   #home nav {
@@ -183,11 +191,11 @@ img {
   align-items: center;
   justify-content: flex-start;
 }
-#home nav .left-side h4 {
-  padding: 5%;
+#home nav .left-side h2 {
+  padding: 0 5%;
 }
 @media (max-width: 500px) {
-  #home nav .left-side h4 {
+  #home nav .left-side h2 {
     font-size: 2.2rem;
   }
 }
@@ -347,4 +355,93 @@ img {
     border-radius: 3px;
     text-align: center;
   }
+}
+#about {
+  background-color: #235B2D;
+  color: white;
+}
+#about nav {
+  display: flex;
+  padding: 1% 0;
+}
+#about nav .left-side2 {
+  width: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+}
+#about nav .left-side2 h2 {
+  padding: 0 5%;
+}
+@media (max-width: 500px) {
+  #about nav .left-side2 h2 {
+    font-size: 2.2rem;
+  }
+}
+#about nav .left-side2 a {
+  text-decoration: none;
+  color: white;
+  font-size: 1.6rem;
+  padding: 0 2%;
+}
+@media (max-width: 500px) {
+  #about nav .left-side2 a {
+    display: none;
+  }
+}
+#about nav .left-side2 a:hover {
+  color: #CDEFB3;
+}
+#about nav .right-side2 {
+  width: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+}
+#about nav .right-side2 a {
+  text-decoration: none;
+  color: white;
+  font-size: 1.6rem;
+  padding: 0 2%;
+}
+@media (max-width: 500px) {
+  #about nav .right-side2 a {
+    display: none;
+  }
+}
+#about nav .right-side2 a:last-child {
+  padding-right: 5%;
+}
+#about nav .right-side2 a:hover {
+  color: #CDEFB3;
+}
+#meet-the-team {
+  background-color: #F9F9F9;
+}
+#meet-the-team h2 {
+  padding: 4% 0 2% 2.4%;
+}
+#meet-the-team .container {
+  display: flex;
+  padding: 0 1.5%;
+  height: 100vh;
+  background-image: url('https://images.unsplash.com/photo-1536882240095-0379873feb4e?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1351&q=80');
+  background-position: right;
+  background-size: cover;
+}
+#meet-the-team .container div {
+  width: calc(14.2857143 - 20px);
+  margin: 10px;
+}
+#meet-the-team .container div a {
+  text-decoration: none;
+  color: #303631;
+}
+#meet-the-team .container div a img {
+  border-radius: 3px;
+  border: 2px solid #235B2D;
+}
+#meet-the-team .container div a h3 {
+  padding: 4% 0;
+  color: #303631;
 }
