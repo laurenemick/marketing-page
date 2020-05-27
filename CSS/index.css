@@ -197,6 +197,7 @@ img {
 @media (max-width: 500px) {
   #home nav .left-side h2 {
     font-size: 2.2rem;
+    padding: 4% 5%;
   }
 }
 #home nav .left-side a {
@@ -378,6 +379,12 @@ img {
   padding: 0 10% 0 5%;
   white-space: nowrap;
 }
+@media (max-width: 500px) {
+  #about nav .left-side2 h2 {
+    font-size: 2rem;
+    padding: 4% 5%;
+  }
+}
 #about nav .left-side2 a {
   text-decoration: none;
   color: white;
@@ -422,8 +429,19 @@ img {
 #meet-the-team {
   background-color: #F9F9F9;
 }
+@media (max-width: 500px) {
+  #meet-the-team {
+    background-color: white;
+  }
+}
 #meet-the-team h2 {
   padding: 4% 0 2% 2.4%;
+}
+@media (max-width: 500px) {
+  #meet-the-team h2 {
+    font-size: 1.8rem;
+    font-weight: bold;
+  }
 }
 #meet-the-team .container {
   display: flex;
@@ -433,19 +451,48 @@ img {
   background-position: right;
   background-size: cover;
 }
+@media (max-width: 500px) {
+  #meet-the-team .container {
+    background-image: none;
+    flex-direction: column;
+  }
+}
 #meet-the-team .container div {
-  width: calc(14.2857143 - 20px);
-  margin: 10px;
+  margin: 1%;
+}
+@media (max-width: 500px) {
+  #meet-the-team .container div {
+    display: flex;
+  }
 }
 #meet-the-team .container div a {
   text-decoration: none;
   color: #303631;
 }
+@media (max-width: 500px) {
+  #meet-the-team .container div a {
+    display: flex;
+    width: 50%;
+  }
+}
 #meet-the-team .container div a img {
   border-radius: 3px;
   border: 2px solid #235B2D;
 }
-#meet-the-team .container div a h3 {
+@media (max-width: 500px) {
+  #meet-the-team .container div .container-text {
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    line-height: 1.5;
+  }
+}
+#meet-the-team .container div .container-text h3 {
   padding: 4% 0;
   color: #303631;
+}
+@media (max-width: 500px) {
+  #meet-the-team .container div .inverse {
+    order: -1;
+  }
 }
