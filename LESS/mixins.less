@@ -17,3 +17,10 @@
     border-radius: 3px;
     text-align: center;
 }
+
+.custom-flex(@direction: column, @justify-content: center, @align-items: center) {
+    display: flex;
+    flex-direction: @direction;
+    justify-content: @justify-content;
+    align-items: @align-items;
+}

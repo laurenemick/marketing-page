@@ -8,15 +8,13 @@
 
         .left-side2 {
             width: 50%;
-            display: flex;
-            align-items: center;
-            justify-content: flex-start;
+            .custom-flex(row, flex-start, center);
 
             h2 {
                 padding: 0 10% 0 5%;
                 white-space: nowrap;
 
-                @media (max-width: 500px) {
+                @media @mobile {
                     font-size: 2rem;
                     padding: 4% 5%;
                 }
@@ -24,7 +22,7 @@
             a {
                 .a-styles();
 
-                @media (max-width: 500px) {
+                @media @mobile {
                     display: none;
                 }
             }
@@ -34,14 +32,12 @@
         }
         .right-side2 {
             width: 50%;
-            display: flex;
-            align-items: center;
-            justify-content: flex-end;
+            .custom-flex(row, flex-end, center);
 
             a {
                 .a-styles();
 
-                @media (max-width: 500px) {
+                @media @mobile {
                     display: none;
                 }
             }
@@ -58,14 +54,14 @@
 #meet-the-team {
     background-color: #F9F9F9;
 
-    @media (max-width: 500px) {
+    @media @mobile {
         background-color: white;
     }
 
     h2 {
        padding: 4% 0 2% 2.4%; 
 
-       @media (max-width: 500px) {
+       @media @mobile {
         font-size: 1.8rem;
         font-weight: bold;
        }
@@ -78,7 +74,7 @@
         background-position: right;
         background-size: cover;
 
-        @media (max-width: 500px) {
+        @media @mobile {
             background-image: none;
             flex-direction: column;
         }
@@ -86,7 +82,7 @@
         div {
             margin: 1%;
 
-            @media (max-width: 500px) {
+            @media @mobile {
                 display: flex;
                 margin: 4% 1%;
             }
@@ -95,7 +91,7 @@
                 text-decoration: none;
                 color: @heavy-metal;
 
-                @media (max-width: 500px) {
+                @media @mobile {
                     display: flex;
                     width: 50%;
                 }
@@ -107,7 +103,7 @@
             } // end of a
             .container-text {
                 
-                @media (max-width: 500px) {
+                @media @mobile {
                     display: flex;
                     flex-direction: column;
                     width: 50%;
@@ -122,7 +118,7 @@
             } // end of container-text
             .inverse {
 
-                @media (max-width: 500px) {
+                @media @mobile {
                     order: -1;
                     text-align: right;
                 }

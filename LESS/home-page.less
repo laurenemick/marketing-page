@@ -5,7 +5,7 @@
     background-size: cover;
     color: white;
 
-    @media (max-width: 500px) {
+    @media @mobile {
         height: 60vh;
     }
 
@@ -14,21 +14,19 @@
         display: flex;
         padding: 1% 0;
 
-        @media (max-width: 500px) {
+        @media @mobile {
             background-color: @everglade;
         }
 
         .left-side {
             width: 50%;
-            display: flex;
-            align-items: center;
-            justify-content: flex-start;
+            .custom-flex(row, flex-start, center);
 
             h2 {
                 padding: 0 10% 0 5%;
                 white-space: nowrap;
 
-                @media (max-width: 500px) {
+                @media @mobile {
                     font-size: 2.2rem;
                     padding: 4% 5%;
                 }
@@ -36,7 +34,7 @@
             a {
                 .a-styles();
 
-                @media (max-width: 500px) {
+                @media @mobile {
                     display: none;
                 }
             }
@@ -46,14 +44,12 @@
         } // end of .left-side
         .right-side {
             width: 50%;
-            display: flex;
-            align-items: center;
-            justify-content: flex-end;
+            .custom-flex(row, flex-end, center);
 
             a {
                 .a-styles();
 
-                @media (max-width: 500px) {
+                @media @mobile {
                     display: none;
                 }
             }
@@ -68,18 +64,16 @@
     .nav-main {
         height: 80%;
         display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
+        .custom-flex();
 
-        @media (max-width: 500px) {
+        @media @mobile {
            display: flex;
         }
 
         h1 {
             font-weight: bold;
 
-            @media (max-width: 500px) {
+            @media @mobile {
                 font-size: 3.4rem;
                 font-weight: 300;
                 display: flex;
@@ -98,24 +92,19 @@
     }
 } // end of header
 
-
-
 .bottom-section {
     margin: 3% 0;
     width: 100%;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
+    .custom-flex();
 
-    @media (max-width: 500px) {
+    @media @mobile {
         padding: 0 3%;
     }
     
     .bottom-section-text {
         width: 30%;
 
-        @media (max-width: 500px) {
+        @media @mobile {
             width: 100%;
         }
 
@@ -127,14 +116,14 @@
             line-height: 1.5;
             font-size: 1.6rem;
 
-            @media (max-width: 500px) {
+            @media @mobile {
                 display: none;
             }
         }
         .btn {
             .custom-button(); 
 
-            @media (max-width: 500px) {
+            @media @mobile {
                 display: none;
             }
 
@@ -146,18 +135,32 @@
         .btn2 {
             display: none;
 
-            @media (max-width: 500px) {
+            @media @mobile {
                 display: block;
                 .custom-button(@padding: 1% 0, @font-color: white, @bg-color: @everglade);
+            }
+        }
+        .btn2:hover {
+
+            @media @mobile {
+                color: @everglade;
+                background-color: white;
             }
         }
         .btn3 {
             display: none;
 
-            @media (max-width: 500px) {
+            @media @mobile {
                 display: block;
                 margin-bottom: 8%;
                 .custom-button(@padding: 1% 0, @font-color: @everglade, @bg-color: white);
+            }
+        }
+        .btn3:hover {
+
+            @media @mobile {
+                color: white;
+                background-color: @everglade;
             }
         }
     }
